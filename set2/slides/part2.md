@@ -15,7 +15,7 @@
 
 ###What we will cover today
 * Boolean Expressions and Conditionals <!-- .element: class="fragment" -->
-* Loops <!-- .element: class="fragment" -->
+* Lists and Loops <!-- .element: class="fragment" -->
 * Functions <!-- .element: class="fragment" -->
 @@@
 
@@ -194,7 +194,7 @@ while True:
 ###While loops example
 Consider the following example that uses iteration to derive a factorial
 
-(A factorial of a number is equal to that number * every positive integer less than that number. E.g. The factorial of 4 is `4 * 3 * 2 * 1`, which equals 24
+(A factorial of a number is equal to that number * every positive integer less than that number. E.g. The factorial of 4 is `4 x 3 x 2 x 1`, which equals 24
 ```python
 input_value = raw_input('Enter a positive integer:')
 n = int(input_value)
@@ -208,12 +208,22 @@ print result
 N.B. - This implementation does not work for negative numbers. Why? <!-- .element class="fragment" -->
 @@@
 
+###Lists
+Sometimes, you need to store a collection of things under a single variable. For instance, a collection of your favorite colors.
+
+This is accomplished using **Lists**. A list begins with a [ ends with a ] and elements of the list are separated with commas.
+
+```python
+colors = ["blue", "red", "green"]
+```
+@@@
+
 ###For loops
-It is also useful to loop through a collection of elements, visiting each one to do some work, then stopping once all elements are processed.
+It is also useful to loop through a list of elements, visiting each one to do some work, then stopping once all elements are processed.
 
 This can be accomplished with a **for** loop
 
-First, we need a collection. We create a **list** of numbers to loop over. This is called `numbers` in the following example
+First, we need a list. We create a **list** of numbers to loop over. This is called `numbers` in the following example
 ```python
 numbers = [1, 3, 8]
 for number in numbers:
