@@ -17,40 +17,11 @@ Some rules
 
 ###What we will cover today
 
-* Why Python? <!-- .element: class="fragment" -->
-* What is programming? <!-- .element: class="fragment" -->
-* Variables and arithmetic <!-- .element: class="fragment" -->
-* Statements and Error Messages <!-- .element: class="fragment" -->
-* Development Environment Setup <!-- .element: class="fragment" -->
-@@@
-
-###Why Python?
-
-* Suitable for beginners, yet used by professionals
-* Readable, maintainable code
-* Rapid rate of development
-* Few "magical" side-effects
-* Variety of applications
-Note: Block 1 begins - 25 minutes
-@@@
-
-###What is Python used for?
-
-* System Administration (Fabric, Salt, Ansible)
-* 3D animation and image editing (Maya, Blender, Gimp)
-* Scientific computing (numpy, scipy)
-* Web development (Django, Flask)
-* Game Development (Civilization 4, EVE Online)
-@@@
-
-###Who is using Python?
-
-* Disney
-* Dropbox
-* Canonical and Red Hat
-* Google
-* NASA
-Note: Caktus uses Python
+* What is programming?
+* Why Python?
+* Variables and arithmetic
+* Statements and Error Messages
+* Development Environment Setup
 @@@
 
 ###What is programming?</h3>
@@ -79,19 +50,50 @@ Platform  | Examples
 Linux     | Gedit, Jedit, Kate
 MacOSX    | TextMate, TextWrangler
 Windows   | Notepad++
-All       | Sublime Text, Vim, Emacs
+All       | Sublime Text, Vim, Emacs, Brackets
 @@@
+
+###Why Python?
+
+* Suitable for beginners, yet used by professionals and top software companies
+* Readable, intuitive, maintainable code
+* Rapid rate of development
+* Few "magical" side-effects
+* Variety of applications
+Note: Block 1 begins - 25 minutes
+@@@
+
+###What is Python used for?
+
+* System Administration (Fabric, Salt, Ansible)
+* 3D animation and image editing (Maya, Blender, Gimp)
+* Scientific computing (numpy, scipy)
+* Web development (Django, Flask)
+* Game Development (Civilization 4, EVE Online)
+* Multi-purpose Object Oriented programming (much like Java, C++, or Ruby)
+* Scripting (much like Bash)
+@@@
+
+###Who is using Python?
+
+* Disney
+* Dropbox
+* Canonical and Red Hat
+* Google
+* NASA
+Note: Caktus uses Python
+@@@
+
 
 ###Let's Develop It
 Let's setup our computer for Python programming
 
-* Let's install a text editor - [Install Sublime Text 3](http://www.sublimetext.com/3)
-* [Install Python](http://www.python.org/download/) - (This step is for Windows users only. GNU/Linux and MacOSX come with Python installed)
+* Let's install a text editor - [Install Brackets (without Extract)](http://brackets.io)
+* [Install Python 2.7](http://www.python.org/download/) - (This step is for Windows users only. GNU/Linux and MacOSX come with Python installed)
 * (Windows only): After installing Python, open the "powershell" program and type:
 <pre style="width: 100%">[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27", "User")</pre>
 * Locate and run the terminal program. Type 'python' and hit enter.
 * More setup instructions are available: [here](http://learnpythonthehardway.org/book/ex0.html)
-* (You can, but don't have to install the other text editors recommended in this guide)
 Note: 15 minutes
 @@@
 
@@ -105,7 +107,8 @@ Open up your terminal and type 'python' <!-- .element class="left-align" -->
 
 * Follow along with the examples in the slides. Type them in! <!-- .element class="fragment" -->
 * Feel free to explore as well. You will not accidentally break things <!-- .element class="fragment" -->
-* $ means you are in the terminal (not python). >>> means you are in python <!-- .element class="fragment" -->
+* Line with $ means you are in the terminal (not python). <!-- .element class="fragment" -->
+* Line with >>> means you are in python <!-- .element class="fragment" -->
 * Type exit() to leave python and return to the terminal. <!-- .element class="fragment" -->
 
 @@@
@@ -150,13 +153,13 @@ Open up your terminal and type 'python' <!-- .element class="left-align" -->
 >>> a = "Spam "
 >>> b = a * 4
 >>> print b
-"Spam Spam Spam Spam"
+"Spam Spam Spam Spam "
 ```
 @@@
 
 ###Data types
 * Variables are names of objects <!-- .element class="fragment" -->
-* Among other things, variables are used to represent something that can't be known until the program is run <!-- .element class="fragment" -->
+* Among other things, variables are used to represent things that vary or that can't be known until the program is run <!-- .element class="fragment" -->
 * Objects always have a "type" <!-- .element class="fragment" -->
 * The type of an object helps define what it can do <!-- .element class="fragment" -->
 * The type can be found using: type() <!-- .element class="fragment" -->
@@ -254,7 +257,7 @@ Now that the folders are made, we only have to use this in the future:
 @@@
 
 ###The Text Editor
-Open sublime text.
+Open your text editor of choice.
 
 * Click File, then Open folder. Navigate to the gdipython folder we created and click "open"
 * In the text editor, enter the following:
