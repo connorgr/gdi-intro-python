@@ -248,7 +248,7 @@ The for loop has three parts:
 @@@
 
 ###Let's Develop It
-* Write a program that takes numbers from user input and adds thems all
+* Write a program that takes numbers from user input and adds them all
 together for a final result.
 * This program should stop taking input, display the answer and exit when the user types "quit".
 * Hint:

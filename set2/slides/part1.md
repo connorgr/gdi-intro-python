@@ -4,15 +4,36 @@
 ####Section 1
 @@@
 
-## Welcome
-Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.
+## Welcome!
+<!-- ## Welcome to <br> Girl Develop It -->
+<!-- Affordable and accessible programs to learn software through mentorship and hands-on instruction. -->
+@@@
 
-Some rules
+<!-- ## Some rules -->
 
-* We are here for you
-* Every question is important
-* Help each other
-* Have fun
+<p class="popText">We are here for <span class="underline">you</span> – Please give feedback!</p>
+
+<p class="popText">*Every* question is important</p>
+
+<p class="popText">Help each other</p>
+
+<p class="popText">Have fun</p>
+@@@
+
+## Code of Conduct
+We expect all attendees to show respect and courtesy to other attendees throughout GDI classes and events.
+
+<hr />
+
+GDI is dedicated to providing a harassment-free community and learning experience for everyone.
+
+<hr />
+
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact your local Chapter Leader(s) immediately. Contact information for your local Chapter Leader can be found on <a href="https://www.girldevelopit.com/chapters">our Chapters page</a>.
+
+<hr />
+
+Full: https://www.girldevelopit.com/code-of-conduct
 @@@
 
 ###What we will cover today
@@ -24,72 +45,92 @@ Some rules
 * Development Environment Setup
 @@@
 
+###Python 2.7 vs Python 3
+
+@@@
+
 ###What is programming?</h3>
-
-* Teaching the computer to do a task
-* A program is made of one or more files of code, each of which solve part of the overall task
-* Programming code is human readable but also needs a form that the computer can run directly. This form is not human readable.
-* To create the form of code the computer can use, we use the Python <a href="http://en.wikipedia.org/wiki/Interpreter_(computing)">interpreter</a>. Other languages use other interpreters or a <a href="http://en.wikipedia.org/wiki/Compiler">compiler</a>
-* Don't focus on what's "under the hood" for now. We will "drive the car" first
-* In other words, there are many layers to the onion. We start at one layer and slowly move toward layers that are beneath or above us
 @@@
 
-###Command line, Python Shell, Text Editors</h3>
+##### Programming is teaching the computer to do a task.
 
-Program      | Description
--------------|----------
-Terminal     | A program that has a command line interface and issues commands to the operating system.
-Python Shell | A command line program that runs inside of the terminal, takes Python code as input, interprets it, and prints out any results.
-Text Editor  | A program that opens text files and allows the user to edit and save them. (Different than a word processor).
+“Program”: made of one or more files of code, each of which solve part of a task
+<hr />
+The Python code we will write is translated into a format the computer can understand through the Python <a href="http://en.wikipedia.org/wiki/Interpreter_(computing)">Interpreter</a>
+<hr />
+Before diving into what the interpreter does, let's focus on how to give it instructions in Python
 @@@
 
-###Example Text Editors
+##### Program: Terminal
 
-Platform  | Examples
-----------|----------
-Linux     | Gedit, Jedit, Kate
-MacOSX    | TextMate, TextWrangler
-Windows   | Notepad++
-All       | Sublime Text, Vim, Emacs, Brackets
+<figure>
+  <img alt="A screenshot of the Apple Terminal application" src="../images/terminal.png" width="50%" style="border-radius: 5px;">
+  <figcaption>In Terminal you can issue commands to the operating system through a command line interface (“make a folder named Photos”)</figcaption>
+</figure>
 @@@
 
-###Why Python?
+##### Program: Python Shell
 
+<figure>
+  <img alt="A screenshot of the Python shell" src="../images/pythonShell.png" width="50%" style="border-radius: 5px;">
+  <figcaption>A command line program that runs inside of the terminal, takes Python code as input, interprets it, and prints out any results.</figcaption>
+</figure>
+@@@
+
+##### Program: Text Editor
+
+<figure>
+  <img alt="A screenshot of the Atom text editor" src="../images/atom.png" width="60%" style="border-radius: 5px;">
+  <figcaption>A program that opens text files and allows the user to edit and save them.</figcaption>
+</figure>
+@@@
+
+##### Popular (Free) Text Editors
+* <a href="https://atom.io/">Atom</a>
+* <a href="https://code.visualstudio.com/">VSCode</a>
+* <a href="https://www.sublimetext.com/">Sublime Text</a>
+* Command line text editors like Vim or Emacs
+
+@@@
+
+### Why Python?
+@@@
+
+##### Python benefits
 * Suitable for beginners, yet used by professionals and top software companies
 * Readable, intuitive, maintainable code
 * Rapid rate of development
-* Few "magical" side-effects
 * Variety of applications
 Note: Block 1 begins - 25 minutes
 @@@
 
 ###What is Python used for?
 
-* System Administration (Fabric, Salt, Ansible)
-* 3D animation and image editing (Maya, Blender, Gimp)
-* Scientific computing (numpy, scipy)
+* Data Science + Research (pandas, numpy, scipy)
+* Machine Learning (tensorflow, scikit-learn)
 * Web development (Django, Flask)
+* 3D animation and image editing (Maya, Blender)
 * Game Development (Civilization 4, EVE Online)
 * Multi-purpose Object Oriented programming (much like Java, C++, or Ruby)
 * Scripting (much like Bash)
 @@@
 
-###Who is using Python?
+### Who is using Python?
 
+* Blender
+* DeepMind (and most AI/ML companies, thereof)
 * Disney
 * Dropbox
-* Canonical and Red Hat
 * Google
 * NASA
-Note: Caktus uses Python
 @@@
 
 
 ###Let's Develop It
 Let's setup our computer for Python programming
 
-* Let's install a text editor - [Install Brackets (without Extract)](http://brackets.io)
-* [Install Python 2.7](http://www.python.org/download/) - (This step is for Windows users only. GNU/Linux and MacOSX come with Python installed)
+* Let's install a text editor - [Install Atom](https://atom.io/)
+* (Windows only) [Install Python 2.7](http://www.python.org/download/)
 * (Windows only): After installing Python, open the "powershell" program and type:
 <pre style="width: 100%">[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27", "User")</pre>
 * Locate and run the terminal program. Type 'python' and hit enter.
@@ -97,7 +138,7 @@ Let's setup our computer for Python programming
 Note: 15 minutes
 @@@
 
-##Block 2
+## Block 2
 Note: 30 minutes
 @@@
 
@@ -164,13 +205,16 @@ Open up your terminal and type 'python' <!-- .element class="left-align" -->
 * The type of an object helps define what it can do <!-- .element class="fragment" -->
 * The type can be found using: type() <!-- .element class="fragment" -->
 * type() is a function. We call it by using parenthesis and pass it an object by placing the object inside the parenthesis <!-- .element class="fragment" -->
+@@@
+
+#### Data type examples
 ```python
 >>> print type(4)
 <type 'int'>
 >>> a = 4
 >>> print type(a)
 <type 'int'>
->>> print type("But I don't like spam")
+>>> print type("Winter is here.")
 <type 'str'>
 >>> print type(3.5)
 <type 'float'>
@@ -179,11 +223,11 @@ Open up your terminal and type 'python' <!-- .element class="left-align" -->
 
 ###Data types - continued ...
 * Objects can be used with a set of operators <!-- .element class="fragment" -->
-* An int or float can be used with any of: +, -, *, / <!-- .element class="fragment" -->
-* A string can be used with any of: +, * <!-- .element class="fragment" -->
-* What happens if we try to use division or subtraction with a string? <!-- .element class="fragment" -->
+* An int or float can be used with any of: +, -, \*, / <!-- .element class="fragment" -->
+* A string can be used with + <!-- .element class="fragment" -->
+* What happens if we try to use the other operators with a string? <!-- .element class="fragment" -->
 ```python
->>> print "Spam" / "eggs"
+>>> print "One string" / "Two string"
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: unsupported operand type(s) for /: 'str' and 'str'
@@ -206,7 +250,7 @@ TypeError: unsupported operand type(s) for /: 'str' and 'str'
 ```python
 # SyntaxError - Doesn't conform to the rules of Python.
 # This statement isn't meaningful to the computer
->>> 4spam)eggs(garbage) + 10
+>>> 4sherlock)watson(moriarty) + 10
 
 # NameError - Using a name that hasn't been defined yet.
 >>> a = 5
@@ -257,22 +301,20 @@ Now that the folders are made, we only have to use this in the future:
 @@@
 
 ###The Text Editor
-Open your text editor of choice.
+Atom: Type 'atom .', then File -> New File ('program.py') <!-- .element class="left-align" -->
 
-* Click File, then Open folder. Navigate to the gdipython folder we created and click "open"
-* In the text editor, enter the following:
+Other: Open App, open gdipython folder, create file. <!-- .element class="left-align" -->
+
+In the text editor, enter the following: <!-- .element class="left-align" -->
 
 ```python
 print 'This is a Python program'
 ```
 
-* Click file, save as. Type 'program.py' and click ok.
-
 ---
 Open a terminal and type
 ```bash
-$ cd
-$ cd gdipython
+$ cd ~/gdipython
 $ python program.py
 ```
 

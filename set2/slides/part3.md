@@ -19,7 +19,7 @@ Note: Block 1 - 25 Minutes
 * More functions
 * Method calls
 * Lists and dictionaries
-* Python built-in funtions
+* Python built-in functions
 
 @@@
 
